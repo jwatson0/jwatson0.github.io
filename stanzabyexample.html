@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>L.B.Stanza</title>
+    <link type="text/css" rel="stylesheet" href="resources/mainstyle.css">
+    <link type="text/css" rel="stylesheet" href="resources/documentation.css">
+  </head>
+  <body>
+    <table class="wrap">
+      <tr><td colspan="3" class="banner">
+        <a href="index.html">Home</a><a href="philosophy.html">Philosophy</a><a href="downloads.html">Downloads</a><a href="documentation.html">Documentation</a><a href="people.html">People</a><a href="community.html">Community</a><a href="news.html">News</a><a href="reference.html">Reference</a>
+      </td></tr>
+      <tr>
+        <td class="nav">
+          <h1>NAVIGATION</h1>
+          <h2><a href="#anchor414">Stanza by Example</a></h2><h3><a href="#anchor415">Getting Started</a></h3><h3><a href="#anchor416">The Very Basics</a></h3><h3><a href="#anchor417">The Less Basic</a></h3><h3><a href="#anchor418">Architecting Programs</a></h3><h3><a href="#anchor419">Programming with First-Class Functions</a></h3><h3><a href="#anchor420">Programming with Sequences</a></h3><h3><a href="#anchor421">Programming with Immutable Datastructures</a></h3><h3><a href="#anchor422">Parametric Polymorphism</a></h3><h3><a href="#anchor423">Advanced Control Flow</a></h3><h3><a href="#anchor424">Stanza's Macro System</a></h3><h3><a href="#anchor425">Stanza's Type System</a></h3><h3><a href="#anchor426">Calling Foreign Functions</a></h3><h3><a href="#anchor427">Appendix</a></h3>
+        </td>
+        <td class="main">
+          <h1 id="anchor414">Stanza by Example</h1><p></p><h2>Patrick S. Li</h2><p><span style="font-style:italic;">Stanza by Example</span> is an introductory book for teaching readers how to program in the L.B. Stanza programming language. Readers are assumed to have basic programming experience, at about the level required to implement and understand a basic sorting algorithm. This book is not a reference book, and is meant to be read in order from front to back. The material is written expecting readers to follow along with the coding examples and to the suggested exercises. By following the book, readers will gain a thorough understanding of Stanza&#39;s fundamental mechanisms and coding style. </p><p>For absolute beginners to programming, the pace of the first chapter will feel a bit fast, and readers are encouraged to take their time to understand and <span style="font-style:italic;">experiment</span> with the examples. When I was young, I taught myself to program by reading <span style="font-style:italic;">Beginning Java 2</span> by Ivor Horton, and one of the goals of this book is to help beginners get started with programming in the same way that Mr. Horton&#39;s book has helped me. Once you get the hang of it, programming is an extremely creative and satisfying endeavor. </p><p>I hope you enjoy the book, and Stanza. </p><p>&nbsp; -Patrick</p><p>For those people that would prefer an offline version of the book, you can also find a PDF version <a href=resources/stanzabyexample.pdf>here</a>.</p>
+    
+      <h2 id="anchor415"><a href="chapter1.html">Getting Started</a></h2>
+      <p>This chapter explains how to download and install Stanza for your system, compile the example programs, and also write your own very first Stanza program.</p>
+      <ol>
+        
+          <li><a href="chapter1.html#anchor0">Get Stanza</a></li>
+        
+          <li><a href="chapter1.html#anchor1">Write a Program</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor416"><a href="chapter2.html">The Very Basics</a></h2>
+      <p>This chapter introduces the basic programming constructs in Stanza. After this chapter, you&#39;ll be able to write basic programs that do simple things.</p>
+      <ol>
+        
+          <li><a href="chapter2.html#anchor2">Project Framework</a></li>
+        
+          <li><a href="chapter2.html#anchor3">Printing Simple Messages</a></li>
+        
+          <li><a href="chapter2.html#anchor4">Lexical Structure</a></li>
+        
+          <li><a href="chapter2.html#anchor5">Comments</a></li>
+        
+          <li><a href="chapter2.html#anchor6">Operators</a></li>
+        
+          <li><a href="chapter2.html#anchor7">Values</a></li>
+        
+          <li><a href="chapter2.html#anchor8">Variables</a></li>
+        
+          <li><a href="chapter2.html#anchor9">Functions</a></li>
+        
+          <li><a href="chapter2.html#anchor10">Comparisons</a></li>
+        
+          <li><a href="chapter2.html#anchor11">If Expressions</a></li>
+        
+          <li><a href="chapter2.html#anchor12">Expression Sequences</a></li>
+        
+          <li><a href="chapter2.html#anchor13">Structure Through Indentation</a></li>
+        
+          <li><a href="chapter2.html#anchor14">While Loops</a></li>
+        
+          <li><a href="chapter2.html#anchor15">For "Loops"</a></li>
+        
+          <li><a href="chapter2.html#anchor16">Labeled Scopes</a></li>
+        
+          <li><a href="chapter2.html#anchor17">Scopes and the Let Expression</a></li>
+        
+          <li><a href="chapter2.html#anchor18">Arrays</a></li>
+        
+          <li><a href="chapter2.html#anchor19">Tuples</a></li>
+        
+          <li><a href="chapter2.html#anchor20">Basic Types</a></li>
+        
+          <li><a href="chapter2.html#anchor21">Structs</a></li>
+        
+          <li><a href="chapter2.html#anchor22">Exercises</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor417"><a href="chapter3.html">The Less Basic</a></h2>
+      <p>This chapter teaches some constructs in Stanza that you may not be familiar with coming from other languages.</p>
+      <ol>
+        
+          <li><a href="chapter3.html#anchor23">More about Structs</a></li>
+        
+          <li><a href="chapter3.html#anchor24">The Match Expression</a></li>
+        
+          <li><a href="chapter3.html#anchor25">The Is Expression</a></li>
+        
+          <li><a href="chapter3.html#anchor26">Casts</a></li>
+        
+          <li><a href="chapter3.html#anchor27">Deep Casts</a></li>
+        
+          <li><a href="chapter3.html#anchor28">Operations on Strings</a></li>
+        
+          <li><a href="chapter3.html#anchor29">Operations on Tuples</a></li>
+        
+          <li><a href="chapter3.html#anchor30">Packages</a></li>
+        
+          <li><a href="chapter3.html#anchor31">Function Overloading</a></li>
+        
+          <li><a href="chapter3.html#anchor32">Operator Mapping</a></li>
+        
+          <li><a href="chapter3.html#anchor33">Vectors</a></li>
+        
+          <li><a href="chapter3.html#anchor34">HashTables</a></li>
+        
+          <li><a href="chapter3.html#anchor35">KeyValue Pairs</a></li>
+        
+          <li><a href="chapter3.html#anchor36">For Loops over Sequences</a></li>
+        
+          <li><a href="chapter3.html#anchor37">Extended Example: Complex Number Package</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor418"><a href="chapter4.html">Architecting Programs</a></h2>
+      <p>This chapter teaches you how to organize and architect large programs using Stanza&#39;s class-less object system.</p>
+      <ol>
+        
+          <li><a href="chapter4.html#anchor38">A Shape Library</a></li>
+        
+          <li><a href="chapter4.html#anchor39">Creating a New Shape</a></li>
+        
+          <li><a href="chapter4.html#anchor40">Subtyping</a></li>
+        
+          <li><a href="chapter4.html#anchor41">Multis and Methods</a></li>
+        
+          <li><a href="chapter4.html#anchor42">Default Methods</a></li>
+        
+          <li><a href="chapter4.html#anchor43">Underneath the Hood</a></li>
+        
+          <li><a href="chapter4.html#anchor44">Intersection Types</a></li>
+        
+          <li><a href="chapter4.html#anchor45">The Flexibility of Functions</a></li>
+        
+          <li><a href="chapter4.html#anchor46">Fundamental and Derived Operations</a></li>
+        
+          <li><a href="chapter4.html#anchor47">Multiple Dispatch</a></li>
+        
+          <li><a href="chapter4.html#anchor48">Ambiguous Methods</a></li>
+        
+          <li><a href="chapter4.html#anchor49">Revisiting Print</a></li>
+        
+          <li><a href="chapter4.html#anchor50">The New Expression</a></li>
+        
+          <li><a href="chapter4.html#anchor51">Constructor Functions</a></li>
+        
+          <li><a href="chapter4.html#anchor52">Revisiting Defstruct</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor419"><a href="chapter5.html">Programming with First-Class Functions</a></h2>
+      <p>This chapter teaches you how to use functions as values, which is one fundamental part of the functional programming paradigm.</p>
+      <ol>
+        
+          <li><a href="chapter5.html#anchor53">Nested Functions</a></li>
+        
+          <li><a href="chapter5.html#anchor54">Functions as Arguments</a></li>
+        
+          <li><a href="chapter5.html#anchor55">Functions as Return Values</a></li>
+        
+          <li><a href="chapter5.html#anchor56">Core Library Functions</a></li>
+        
+          <li><a href="chapter5.html#anchor57">Anonymous Functions</a></li>
+        
+          <li><a href="chapter5.html#anchor58">The For Construct</a></li>
+        
+          <li><a href="chapter5.html#anchor59">Stanza Idioms</a></li>
+        
+          <li><a href="chapter5.html#anchor60">Tail Calls</a></li>
+        
+          <li><a href="chapter5.html#anchor61">Revisiting While</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor420"><a href="chapter6.html">Programming with Sequences</a></h2>
+      <p>This chapter teaches you how to program using Stanza&#39;s sequence abstraction, as well as how to make full use of the core sequence library.</p>
+      <ol>
+        
+          <li><a href="chapter6.html#anchor62">Fundamental Operations</a></li>
+        
+          <li><a href="chapter6.html#anchor63">Writing a Sequence Function</a></li>
+        
+          <li><a href="chapter6.html#anchor64">Lazy Sequences</a></li>
+        
+          <li><a href="chapter6.html#anchor65">Using The Sequence Library</a></li>
+        
+          <li><a href="chapter6.html#anchor66">Collection versus Seqable</a></li>
+        
+          <li><a href="chapter6.html#anchor67">Revisiting Stack</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor421"><a href="chapter7.html">Programming with Immutable Datastructures</a></h2>
+      <p>This chapter teaches you how to program using datastructures that cannot be changed after being initialized. This is the other fundamental part of functional programming paradigm.</p>
+      <ol>
+        
+          <li><a href="chapter7.html#anchor68">Lists</a></li>
+        
+          <li><a href="chapter7.html#anchor69">Example: Coin Counting</a></li>
+        
+          <li><a href="chapter7.html#anchor70">List Library</a></li>
+        
+          <li><a href="chapter7.html#anchor71">Example: More Coin Counting</a></li>
+        
+          <li><a href="chapter7.html#anchor72">Extended Example: Automatic Differentiation</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor422"><a href="chapter8.html">Parametric Polymorphism</a></h2>
+      <p>This chapter teaches you how to define types that are themselves parameterized by other types. After this chapter, you will be able to define datastructures and libraries that are as general and as powerful as the ones included with Stanza.</p>
+      <ol>
+        
+          <li><a href="chapter8.html#anchor73">The Need for Polymorphism</a></li>
+        
+          <li><a href="chapter8.html#anchor74">Explicit Type Arguments</a></li>
+        
+          <li><a href="chapter8.html#anchor75">Captured Type Arguments</a></li>
+        
+          <li><a href="chapter8.html#anchor76">Parametric Types</a></li>
+        
+          <li><a href="chapter8.html#anchor77">Match Expressions and Type Erasure</a></li>
+        
+          <li><a href="chapter8.html#anchor78">Revisiting Stack</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor423"><a href="chapter9.html">Advanced Control Flow</a></h2>
+      <p>This chapter teaches you about Stanza&#39;s advanced control flow constructs, as well as about the fundamental mechanism underlying all of them: the targetable coroutine system.</p>
+      <ol>
+        
+          <li><a href="chapter9.html#anchor79">First Class Labeled Scopes</a></li>
+        
+          <li><a href="chapter9.html#anchor80">Dynamic Wind</a></li>
+        
+          <li><a href="chapter9.html#anchor81">Dynamically Scoped Variables</a></li>
+        
+          <li><a href="chapter9.html#anchor82">Attempts and Failures</a></li>
+        
+          <li><a href="chapter9.html#anchor83">Example: S-Expression Parser</a></li>
+        
+          <li><a href="chapter9.html#anchor84">Exception Handling</a></li>
+        
+          <li><a href="chapter9.html#anchor85">Generators</a></li>
+        
+          <li><a href="chapter9.html#anchor86">Coroutines</a></li>
+        
+          <li><a href="chapter9.html#anchor87">Example: Key Listener</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor424"><a href="macrosystem.html">Stanza's Macro System</a></h2>
+      <p>This chapter teaches you about Stanza&#39;s macro system: what macros are, how to write your own, and some examples of using them. (This chapter is still a work in progress - May 31, 2022)</p>
+      <ol>
+        
+          <li><a href="macrosystem.html#anchor88">What Is a Macro?</a></li>
+        
+          <li><a href="macrosystem.html#anchor89">Defining and Using Your First Macro</a></li>
+        
+          <li><a href="macrosystem.html#anchor90">Exploring Further</a></li>
+        
+          <li><a href="macrosystem.html#anchor91">The DefSyntax System: A Small Experiment Framework</a></li>
+        
+          <li><a href="macrosystem.html#anchor92">The Pattern Language</a></li>
+        
+          <li><a href="macrosystem.html#anchor93">Productions and Rules</a></li>
+        
+          <li><a href="macrosystem.html#anchor94">The Stanza Core Macros</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor425"><a href="chapter10.html">Stanza's Type System</a></h2>
+      <p>This chapter summarizes and explains the mechanisms behind Stanza&#39;s optional type system in more depth.</p>
+      <ol>
+        
+          <li><a href="chapter10.html#anchor95">Kinds of Types</a></li>
+        
+          <li><a href="chapter10.html#anchor96">The Subtype Relation</a></li>
+        
+          <li><a href="chapter10.html#anchor97">Ground Types</a></li>
+        
+          <li><a href="chapter10.html#anchor98">Parametric Types</a></li>
+        
+          <li><a href="chapter10.html#anchor99">Tuple Types</a></li>
+        
+          <li><a href="chapter10.html#anchor100">Function Types</a></li>
+        
+          <li><a href="chapter10.html#anchor101">Union Types</a></li>
+        
+          <li><a href="chapter10.html#anchor102">Intersection Types</a></li>
+        
+          <li><a href="chapter10.html#anchor103">The Void Type</a></li>
+        
+          <li><a href="chapter10.html#anchor104">The Unknown Type</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor426"><a href="chapter11.html">Calling Foreign Functions</a></h2>
+      <p>This chapter teaches you write programs that interact with code written in other languages. It will teach you how to call functions written in other languages, and how to write Stanza functions meant to be called from other languages.</p>
+      <ol>
+        
+          <li><a href="chapter11.html#anchor105">Writing a C Function</a></li>
+        
+          <li><a href="chapter11.html#anchor106">Calling our C Function</a></li>
+        
+          <li><a href="chapter11.html#anchor107">Calling LoStanza from Stanza</a></li>
+        
+          <li><a href="chapter11.html#anchor108">LoStanza Types</a></li>
+        
+          <li><a href="chapter11.html#anchor109">External Global Variables</a></li>
+        
+          <li><a href="chapter11.html#anchor110">Function Pointers</a></li>
+        
+          <li><a href="chapter11.html#anchor111">The Address Operator</a></li>
+        
+          <li><a href="chapter11.html#anchor112">Calling LoStanza from C</a></li>
+        
+          <li><a href="chapter11.html#anchor113">Passing Callbacks to C</a></li>
+        
+      </ol>
+    
+      <h2 id="anchor427"><a href="appendix.html">Appendix</a></h2>
+      <p>Stanza has a number of convenience constructs that make your life easier, but they are not necessary for day to day programming. You may skim through this appendix and learn about these constructs as their need arises. </p>
+      <ol>
+        
+          <li><a href="appendix.html#anchor114">Stanza Compiler Options</a></li>
+        
+          <li><a href="appendix.html#anchor115">The When Expression</a></li>
+        
+          <li><a href="appendix.html#anchor116">The Where Expression</a></li>
+        
+          <li><a href="appendix.html#anchor117">The Switch Expression</a></li>
+        
+          <li><a href="appendix.html#anchor118">More on Visibility</a></li>
+        
+          <li><a href="appendix.html#anchor119">Macro Plugins</a></li>
+        
+      </ol>
+    
+  
+        </td>
+        <td class="rest">
+          <img url="resources/spacer.gif"></img>
+        </td>
+      </tr>
+      <tr><td colspan="3" class="footer">
+        Site design by Luca Li. Copyright 2015.
+      </td></tr>
+    </table>
+  </body>
+</html>
